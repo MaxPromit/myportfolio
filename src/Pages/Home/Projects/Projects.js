@@ -6,7 +6,7 @@ import Project from './Project';
 const Projects = () => {
     const [projects, setProjects] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:8000/projects')
+        fetch('https://portfolio-server-taupe.vercel.app/projects')
         .then(res=> res.json())
         .then(data => setProjects(data))
     },[])
