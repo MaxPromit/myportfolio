@@ -1,5 +1,6 @@
 import React from "react";
 import img from "../../../image/IMG_20210309_133205_340.jpg"
+import Projects from "../Projects/Projects";
 
 const Home = () => {
   return (
@@ -9,7 +10,7 @@ const Home = () => {
           <img src={img} className="max-w-xs lg:max-w-sm rounded-lg shadow-2xl" alt="" />
           <div className="lg:w-1/2">
             <h1 className="text-5xl font-bold">
-              Hi, I'm <span className="text-red-700">Max Promit</span> <br />
+              Hi, I'm <span className="text-red-700">Promit Biswas</span> <br />
               <h3 className="text-4xl mt-3">A MERN Stack Web Developer</h3>
             </h1>
             <p className="py-6">
@@ -30,6 +31,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Projects></Projects>
     </div>
   );
 };
