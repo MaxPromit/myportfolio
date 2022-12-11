@@ -1,17 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Project = ({ project }) => {
   return (
     <div>
-      <div className="card w-96 bg-base-100 shadow-xl">
+      <div className="card w-96 bg-base-100 shadow-xl rounded-lg">
         <figure>
-          <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
+          <img className="object-cover w-96 h-64" src={project.img} alt="Shoes" />
         </figure>
         <div className="card-body">
-          <h2 className="card-title">{project.info}</h2>
-          <p>{project.title}</p>
+          <h2 className="card-title text-[#DC143C]">{project.info}</h2>
+          <p className="text-2xl">{project.title}</p>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary">View Project</button>
+            <Link to={`/product/${project._id}`} className="btn bg-indigo-700 hover:bg-indigo-800 border-none font-medium rounded">Visit Projects</Link>
           </div>
         </div>
       </div>

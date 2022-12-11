@@ -6,8 +6,9 @@ const Contact = () => {
 
     // }
   return (
-    <div>
-      <section className="min-h-screen bg-white dark:bg-gray-900 lg:flex">
+    <div id="contact">
+        <h2 className="text-3xl text-black font-semibold text-center my-10">Contact With Us</h2>
+      <section  className="min-h-screen bg-white dark:bg-gray-900 lg:flex mb-20">
         <div className="flex flex-col justify-center w-full p-8 lg:bg-gray-100 lg:dark:bg-gray-800 lg:px-12 xl:px-32 lg:w-1/2">
           <h1 className="text-3xl font-semibold text-gray-800 capitalize dark:text-white lg:text-4xl">
             Contact With Us
@@ -141,7 +142,7 @@ const Contact = () => {
               ></textarea>
             </div>
 
-            <button className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+            <button className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-indigo-700 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
               get in touch
             </button>
           </form>
